@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Password Generator</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body style="margin-right: auto; margin-left: auto;">
+
+    <nav class="navbar navbar-dark bg-dark">
+        <!--a class="navbar-brand" href="#">Random Password Generator</a-->
+    </nav>
+
+    <div class="container" >
+
+        <div class="row">
+
+            <div class="col-lg-8 col-sm-12 mx-auto">
+
+                <div class="content" style="margin-top: 20px; margin-bottom: 20px;">
+                    <h4 style="font-size: 35px; text-align: center;" > Password Generator
+                      <br />
+                      <input type="text" id="display" style="width: 95%; height: 200px;" placeholder="Your Secure">
+                      <br />
+                      <input  type="range" min="8" max="128" name="slider" id="slider"> 
+                      <br />
+                      <button onclick="generate()" style="text-align: center; background-color: red; color: white;">Generate Password</button>
+                    
+                      <div id="PWDLenght" style="font-size: 15px; margin-top: 20px;"></div>
+                    </h4>
+                    
+                </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
